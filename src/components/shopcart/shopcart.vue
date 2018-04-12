@@ -103,16 +103,16 @@ export default {
   },
   methods: {
     pay() {
-      // var info = {
-      //   user_phone: '13827465362',
-      //   user_pwd: '123456',
-      //   pid: '1'
-      // }
-      // this.$http.post('http://shop.glxqw.cn/api.php/user/login', info).then((res) => {
-      //   console.log(res)
-      // },(err) => {
-      //   console.log(err)
-      // })
+      var info = {
+        user_phone: '13827465362',
+        user_pwd: '123456',
+        pid: '1'
+      }
+      this.$http.post('http://shop.glxqw.cn/api.php/user/login', info).then((res) => {
+        console.log(res)
+      },(err) => {
+        console.log(err)
+      })
       if(this.totalPrice < this.minPrice) {
         return
       } else {
